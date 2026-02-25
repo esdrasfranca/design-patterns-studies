@@ -11,6 +11,7 @@ Atualmente, o projeto inclui exemplos dos seguintes padrões:
 *   **Abstract Factory**:
     *   `src/AbstractFactory`: Demonstra uma fábrica para criar famílias de objetos relacionados (writers de CSV, JSON e XML) sem especificar suas classes concretas, com implementações para um sistema "Windows".
     *   `src/UIAbstractFactory`: Um segundo exemplo de Abstract Factory, focado na criação de famílias de componentes de interface de usuário (botões, inputs) para diferentes temas (Dark e Light).
+    *   `src/AbstractFactoryConnectorCloud`: Um terceiro exemplo que abstrai a criação de conectores para serviços em nuvem (AWS, Azure), como armazenamento (Storage) e mensageria (Messenger).
 
 ## Como Executar
 
@@ -25,12 +26,12 @@ Atualmente, o projeto inclui exemplos dos seguintes padrões:
 
 3.  **Execução dos Exemplos**:
     *   Inicie seu servidor web e aponte para o diretório do projeto.
-    *   Acesse os arquivos `index.php` pelo navegador para ver os padrões em ação.
+    *   Acesse os arquivos `index-ui.php` e `index-cloud.php` pelo navegador para ver os padrões em ação.
 
 ## Estrutura do Projeto
 
 *   `src/`: Contém o código-fonte dos padrões de projeto, organizados em namespaces.
 *   `vendor/`: Dependências gerenciadas pelo Composer.
-*   `index.php`: Ponto de entrada para o exemplo do `AbstractFactory` de writers.
 *   `index-ui.php`: Ponto de entrada para o exemplo do `UIAbstractFactory` de componentes de UI.
+*   `index-cloud.php`: Ponto de entrada para o exemplo do `AbstractFactoryConnectorCloud`.
 *   `composer.json`: Define as configurações do projeto e dependências.
