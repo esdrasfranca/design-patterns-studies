@@ -9,7 +9,6 @@ Atualmente, o projeto inclui exemplos dos seguintes padrões:
 ### Padrões Criacionais
 
 *   **Abstract Factory**:
-    *   `src/AbstractFactory`: Demonstra uma fábrica para criar famílias de objetos relacionados (writers de CSV, JSON e XML) sem especificar suas classes concretas, com implementações para um sistema "Windows".
     *   `src/UIAbstractFactory`: Um segundo exemplo de Abstract Factory, focado na criação de famílias de componentes de interface de usuário (botões, inputs) para diferentes temas (Dark e Light).
     *   `src/AbstractFactoryConnectorCloud`: Um terceiro exemplo que abstrai a criação de conectores para serviços em nuvem (AWS, Azure), como armazenamento (Storage) e mensageria (Messenger).
 
