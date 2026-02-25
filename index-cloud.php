@@ -6,7 +6,11 @@ use App\DesignPatternsPhp\AbstractFactoryConnectorCloud\Interface\CloudFactory;
 
 require('./vendor/autoload.php');
 
-$provider = 'azure';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$provider = $_ENV['CLOUD_PROVIDER'];
+
 if ($provider == 'aws') {
     $factory = new AwsFactory();
 } else {
