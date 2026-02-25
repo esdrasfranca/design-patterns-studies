@@ -1,0 +1,16 @@
+{
+    "name": "esdras/design-patterns-php",
+    "description": "Design Patterns Studies",
+    "autoload": {
+        "psr-4": {
+            "App\\DesignPatternsPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Esdras Franca",
+            "email": "esdras.franca.85@gmail.com"
+        }
+    ],
+    "require": {}
+}
