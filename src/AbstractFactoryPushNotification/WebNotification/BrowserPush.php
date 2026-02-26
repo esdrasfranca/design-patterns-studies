@@ -7,8 +7,8 @@ use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\IPushNotific
 class BrowserPush implements IPushNotification
 {
 
-    public function sendPush(string $message): void
+    public function sendPush(string $message): string
     {
-        echo "Enviando Push via Service Worker (Web): $message";
+        return "Enviando Push via Service Worker (Web): $message";
     }
 }

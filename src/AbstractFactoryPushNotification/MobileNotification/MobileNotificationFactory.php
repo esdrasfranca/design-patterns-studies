@@ -5,6 +5,7 @@ namespace App\DesignPatternsPhp\AbstractFactoryPushNotification\MobileNotificati
 use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\IEmailNotification;
 use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\INotificationFactory;
 use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\IPushNotification;
+use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\ISmsNotification;
 
 class MobileNotificationFactory implements INotificationFactory
 {
@@ -17,5 +18,10 @@ class MobileNotificationFactory implements INotificationFactory
     public function createEmailNotification(): IEmailNotification
     {
         return new MobileEmail();
+    }
+
+    public function createSmsNotification(): ISmsNotification
+    {
+        return new TwiloSms();
     }
 }

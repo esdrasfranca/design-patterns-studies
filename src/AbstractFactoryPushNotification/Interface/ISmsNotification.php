@@ -2,7 +2,7 @@
 
 namespace App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface;
 
-interface IPushNotification
+interface ISmsNotification
 {
-    public function sendPush(string $message): string;
+    public function sendSms(string $message): string;
 }

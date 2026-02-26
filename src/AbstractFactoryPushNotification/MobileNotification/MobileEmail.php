@@ -6,8 +6,8 @@ use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\IEmailNotifi
 
 class MobileEmail implements IEmailNotification
 {
-    public function sendEmail(string $message): void
+    public function sendEmail(string $message): string
     {
-        echo "Enviando Email formatado para telas pequenas: $message";
+        return "Enviando Email formatado para telas pequenas: $message";
     }
 }

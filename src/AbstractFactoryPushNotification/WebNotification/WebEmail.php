@@ -7,8 +7,8 @@ use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\IEmailNotifi
 class WebEmail implements IEmailNotification
 {
 
-    public function sendEmail(string $message): void
+    public function sendEmail(string $message): string
     {
-        echo "Enviando Email formatado para Desktop: $message";
+        return "Enviando Email formatado para Desktop: $message";
     }
 }
