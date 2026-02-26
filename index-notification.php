@@ -34,8 +34,4 @@ function enviarCampanha(INotificationFactory $factory)
             echo "Método de notificação inválido.";
             break;
     }
-
-
-    $push = $factory->createSmsNotification();
-    echo $push->sendSms("Promoção de Verão!");
 }
