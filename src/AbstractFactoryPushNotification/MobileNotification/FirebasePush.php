@@ -1,0 +1,14 @@
+<?php
+
+namespace App\DesignPatternsPhp\AbstractFactoryPushNotification\MobileNotification;
+
+use App\DesignPatternsPhp\AbstractFactoryPushNotification\Interface\IPushNotification;
+
+class FirebasePush implements IPushNotification
+{
+
+    public function sendPush(string $message): void
+    {
+        echo "Enviando Push via Firebase (Mobile): $message";
+    }
+}
